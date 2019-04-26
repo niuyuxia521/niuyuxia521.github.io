@@ -1,0 +1,392 @@
+/*-------------------- 顶部 导航栏 ------------------*/
+.header{
+	position: relative;
+   	height: 50px;
+   	line-height: 50px;
+   	color: #7a7a7a;
+   	background-color: #212121;
+   	z-index: 9999;
+}
+.nav{
+	width: 1000px;
+	position: relative;
+    margin: 0 auto;
+}
+.logo{
+	float: left;
+    display: block;
+    margin-right: 3px;
+    width: 129px;
+    height: 40px;
+    background: url(../images/headerdark.png) no-repeat;
+    border: 5px solid #212121;
+}
+.navItem{
+	float: left;
+    height: 50px;
+    border-left: 1px solid #333333;
+}
+.navRight{
+	float: right;
+    display: inline;
+    padding-right: 96px;
+    text-align: right;
+    font-size: 12px;
+    color: #333;
+}
+.social{
+    display: inline;
+    height: 22px;
+    line-height: 22px;
+    float: right;
+    margin-top: 14px;
+}
+.snlike{
+	display: inline-block;
+    margin-left: 5px;
+    padding-left: 22px;
+    width: 0;
+    height: 22px;
+    vertical-align: top;
+    background-image: url(../images/headerdark.png);
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.facebox{
+	background-position: -130px 0;
+}
+.google{
+	background-position: -153px 0;
+}
+.gamebase{
+	background-position: -225px 0;
+}
+.meau{
+	float: right;
+    display: inline;
+    margin-right: 5px;
+}
+a.nrlike{
+	text-decoration: none;
+    color: #7a7a7a;
+}
+.nrlike:hover{
+	text-decoration: underline;
+}
+/*------------------ 内容部分 -----------------*/
+.bg{
+	min-width: 1200px;
+    position: relative;
+}
+/*-------- 第一层 --------*/
+.page1{
+	min-width: 1200px;
+    height: 933px;
+    background: url(../images/guide-bg1.jpg) no-repeat center top;
+}
+/*-- 视频播放 --*/
+.videoBox{
+  position: absolute;
+  left: 50%;
+  top: 485px;
+  margin-left: -440px;
+  background: url(../images/mediabg.jpg);
+  width: 267px;
+  height: 200px;
+  cursor: pointer;
+}
+.videoBox .circle{
+  position: absolute;
+  left: 50%;
+  margin-left: -45.5px;
+  top: 50%;
+  margin-top: -45.5px;
+  width: 91px;
+  height: 91px;
+  background-image: url(../images/rotate1.png);
+  animation: foobar 1s linear infinite;
+  -webkit-animation: foobar 1s linear infinite;
+}
+@keyframes foobar{
+  0% {
+    transform:rotate(360deg)
+  }
+  100%{
+    transform:rotate(0deg)
+  }
+}
+@-webkit-keyframes foobar{
+  0% {
+    -webkit-transform:rotate(360deg)
+  }
+  100%{
+    -webkit-transform:rotate(0deg)
+  }
+}
+.videoBox .arraw{
+  position: absolute;
+  left: 50%;
+  margin-left: -45.5px;
+  top: 50%;
+  margin-top: -45.5px;
+  width: 91px;
+  height: 91px;
+  background-image: url(../images/rotate2.png);
+}
+.mask{
+  width: 100%;
+  height: 100%;
+  display: none;
+  position: fixed;
+  z-index: 98;
+  left: 0;
+  top: 0;
+  background-color: rgba(0,0,0,.6);
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+}
+.content_video{
+  width: 720px;
+  height: 400px;
+  position: fixed;
+  top: 50%!important;
+  left: 50%!important;
+  display: none;
+  overflow: hidden;
+  margin-left: -360px;
+  margin-top: -200px;
+  background: #000;
+  z-index: 99;
+}
+#y_video{
+  position: relative;
+  height: 400px;
+  width: 720px;
+  padding: 0px;
+  background-color: rgb(0, 0, 0);
+  z-index:0;
+}
+.close{
+  position: fixed;
+  display: none;
+  left: 50%;
+  top: 50%;
+  margin-left: 365px;
+  margin-top: -200px;
+  width: 50px;
+  height: 50px;
+  background: url(../images/x.png) no-repeat;
+  right: -50px;
+  cursor: pointer;
+  z-index: 99;
+}
+/*-- 第一层按钮 进入官网 特色新服 资料 --*/
+.page1_btn{
+	width: 1040px;
+  height: 100px;
+  margin: 0 auto;
+  padding-top: 48px;
+  margin-left: -81px;
+}
+.page1_btn1{
+  width: 260px;
+  height: 100px;
+  float: left;
+  margin-right: 10px;
+  display: block;
+	background: url(../images/guide-btn1.png) no-repeat;
+}
+.page1_btn2{
+  width: 500px;
+  height: 100px;
+  float: left;
+  margin-right: 10px;
+  display: block;
+	background: url(../images/guide-btn2.png) no-repeat;
+}
+.page1_btn3{
+  width: 260px;
+  height: 100px;
+  float: left;
+  display: block;
+	background: url(../images/guide-btn3.png) no-repeat;
+}
+/*-------- 第二层 --------*/
+.page2{
+	min-width: 1200px;
+  height: 878px;
+  position: relative;
+  background: url(../images/guide-bg2.jpg) no-repeat center top;
+}
+/*-- tab --*/
+.page2_btn{
+	width: 255px;
+  height: 37px;
+  margin: 0 auto;
+  padding-top: 130px;
+}
+.tabItem{
+	width: 120px;
+  height: 37px;
+  color: #d6c18b;
+  font-size: 20px;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+  float: left;
+}
+.tabItem.current{
+	background: url(../images/tab-bottom.png) no-repeat center bottom;
+}
+.tab_datail{
+	width: 1080px;
+  height: 420px;
+  margin: 0 auto;
+  padding: 0 60px;
+  margin-top: 43px;
+  perspective: 800px;
+}
+.card{
+	width: 200px;
+  height: 380px;
+  float: left;
+}
+.card .back{
+	transition: transform 400ms;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  position: absolute;
+  -webkit-transform: rotateY( -180deg );
+  transform: rotateY( -180deg );
+}
+.card:hover .back{
+	transform: rotateY( 0deg );
+	-webkit-transform: rotateY( 0deg );
+}
+.card .font{
+	transition: transform 400ms;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  position: absolute;
+  -webkit-transform: rotateY( 0deg );
+  transform: rotateY( 0deg );
+}
+.card:hover .font{
+	transform: rotateY( 180deg );
+	-webkit-transform: rotateY( 180deg );
+}
+.opactiy_d{
+	opacity: 0;
+}
+/*-------- 第三层 --------*/
+.page3{
+	min-width: 1200px;
+  height: 1108px;
+  background: url(../images/guide-bg3.jpg) no-repeat center top;
+}
+.page3_tab{
+  width: 375px;
+  height: 37px;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+.tab_item1{
+  width: 115px;
+  height: 37px;
+  color: #000;
+  font-size: 20px;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+  float: left;
+}
+.tab_item1.current{
+  background: url(../images/page3-tabbg.png) no-repeat center bottom;
+}
+.page3_detail{
+  width: 1200px;
+  height: 844px;
+  margin: 0 auto;
+  display: none;
+}
+.page3_big{
+  width: 1200px;
+  height: 688px;
+  float: left;
+}
+.small_pics{
+  width: 1228px;
+  height: 230px;
+  margin-top: -144px;
+  float: left;
+}
+.small_pics li{
+  float: left;
+  margin: 0 5px;
+  width: 108px;
+  height: 230px;
+  overflow: hidden;
+}
+.small_pics li img{
+  width: 100%;
+}
+.page3_btn{
+  width: 1040px;
+  height: 100px;
+  margin: 0 auto;
+}
+.page3_btn1{
+  width: 260px;
+  height: 100px;
+  display: block;
+  float: left;
+  margin-right: 10px;
+  background: url(../images/download-game.png) no-repeat;
+}
+.page3_btn2{
+  width: 260px;
+  height: 100px;
+  display: block;
+  float: left;
+  background: url(../images/quick-signin.png) no-repeat;
+}
+/*------------------ 底部 -----------------*/
+.footer{
+  background: #0F0F0F;
+  color: #686868;
+  text-align: center;
+}
+.footer table{
+  margin: 0px auto;
+}
+.footer img{
+  border:none;
+}
+.words{
+  height: 40px;
+  font-size: 12px;
+}
+/*------------------ 悬浮导航 -----------------*/
+.f_ancho{
+	width: 28px;
+  height: 104px;
+  position: fixed;
+  right: 50px;
+  bottom: 100px;
+  background: url(../images/fixed-bg1.png) no-repeat;
+}
+.ancho{
+	width: 28px;
+  height: 31px;
+  cursor: pointer;
+}
+.ancho1{
+	margin-bottom: 5px;
+}
+.ancho2{
+	margin-bottom: 5px;
+}
